@@ -16,6 +16,9 @@
 		3507761B2C0F0828002E6971 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3507761A2C0F0828002E6971 /* LoginPageViewController.swift */; };
 		3507761E2C0F096B002E6971 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3507761D2C0F096B002E6971 /* Alamofire */; };
 		350776222C0F1383002E6971 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 350776212C0F1383002E6971 /* SnapKit */; };
+		350776242C0F551B002E6971 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350776232C0F551B002E6971 /* TabBarViewController.swift */; };
+		350776272C0F5625002E6971 /* HotContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350776262C0F5625002E6971 /* HotContentViewController.swift */; };
+		350776292C0F562E002E6971 /* SavedContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350776282C0F562E002E6971 /* SavedContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		350776102C0F0796002E6971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		350776182C0F081E002E6971 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		3507761A2C0F0828002E6971 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		350776232C0F551B002E6971 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		350776262C0F5625002E6971 /* HotContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotContentViewController.swift; sourceTree = "<group>"; };
+		350776282C0F562E002E6971 /* SavedContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +68,10 @@
 		350776012C0F0794002E6971 /* MovieAppProject */ = {
 			isa = PBXGroup;
 			children = (
-				3507761F2C0F10A0002E6971 /* New Group */,
+				350776232C0F551B002E6971 /* TabBarViewController.swift */,
 				350776162C0F07F2002E6971 /* MainPage */,
-				350776172C0F0802002E6971 /* LoginPage */,
+				3507761F2C0F10A0002E6971 /* HotContent */,
+				350776252C0F5598002E6971 /* SavedContent */,
 				350776022C0F0794002E6971 /* AppDelegate.swift */,
 				350776042C0F0794002E6971 /* SceneDelegate.swift */,
 				350776062C0F0794002E6971 /* ViewController.swift */,
@@ -79,23 +86,25 @@
 			isa = PBXGroup;
 			children = (
 				350776182C0F081E002E6971 /* MainPageViewController.swift */,
+				3507761A2C0F0828002E6971 /* LoginPageViewController.swift */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
 		};
-		350776172C0F0802002E6971 /* LoginPage */ = {
+		3507761F2C0F10A0002E6971 /* HotContent */ = {
 			isa = PBXGroup;
 			children = (
-				3507761A2C0F0828002E6971 /* LoginPageViewController.swift */,
+				350776262C0F5625002E6971 /* HotContentViewController.swift */,
 			);
-			path = LoginPage;
+			path = HotContent;
 			sourceTree = "<group>";
 		};
-		3507761F2C0F10A0002E6971 /* New Group */ = {
+		350776252C0F5598002E6971 /* SavedContent */ = {
 			isa = PBXGroup;
 			children = (
+				350776282C0F562E002E6971 /* SavedContentViewController.swift */,
 			);
-			path = "New Group";
+			path = SavedContent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,10 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				350776292C0F562E002E6971 /* SavedContentViewController.swift in Sources */,
 				350776192C0F081E002E6971 /* MainPageViewController.swift in Sources */,
 				350776072C0F0794002E6971 /* ViewController.swift in Sources */,
 				350776032C0F0794002E6971 /* AppDelegate.swift in Sources */,
 				3507761B2C0F0828002E6971 /* LoginPageViewController.swift in Sources */,
+				350776242C0F551B002E6971 /* TabBarViewController.swift in Sources */,
+				350776272C0F5625002E6971 /* HotContentViewController.swift in Sources */,
 				350776052C0F0794002E6971 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
