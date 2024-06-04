@@ -10,9 +10,12 @@
 		350776032C0F0794002E6971 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350776022C0F0794002E6971 /* AppDelegate.swift */; };
 		350776052C0F0794002E6971 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350776042C0F0794002E6971 /* SceneDelegate.swift */; };
 		350776072C0F0794002E6971 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350776062C0F0794002E6971 /* ViewController.swift */; };
-		3507760A2C0F0794002E6971 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 350776092C0F0794002E6971 /* Base */; };
 		3507760C2C0F0796002E6971 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3507760B2C0F0796002E6971 /* Assets.xcassets */; };
 		3507760F2C0F0796002E6971 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3507760E2C0F0796002E6971 /* Base */; };
+		350776192C0F081E002E6971 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350776182C0F081E002E6971 /* MainPageViewController.swift */; };
+		3507761B2C0F0828002E6971 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3507761A2C0F0828002E6971 /* LoginPageViewController.swift */; };
+		3507761E2C0F096B002E6971 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3507761D2C0F096B002E6971 /* Alamofire */; };
+		350776222C0F1383002E6971 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 350776212C0F1383002E6971 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +23,11 @@
 		350776022C0F0794002E6971 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		350776042C0F0794002E6971 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		350776062C0F0794002E6971 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		350776092C0F0794002E6971 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3507760B2C0F0796002E6971 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3507760E2C0F0796002E6971 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		350776102C0F0796002E6971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		350776182C0F081E002E6971 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		3507761A2C0F0828002E6971 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3507761E2C0F096B002E6971 /* Alamofire in Frameworks */,
+				350776222C0F1383002E6971 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +62,40 @@
 		350776012C0F0794002E6971 /* MovieAppProject */ = {
 			isa = PBXGroup;
 			children = (
+				3507761F2C0F10A0002E6971 /* New Group */,
+				350776162C0F07F2002E6971 /* MainPage */,
+				350776172C0F0802002E6971 /* LoginPage */,
 				350776022C0F0794002E6971 /* AppDelegate.swift */,
 				350776042C0F0794002E6971 /* SceneDelegate.swift */,
 				350776062C0F0794002E6971 /* ViewController.swift */,
-				350776082C0F0794002E6971 /* Main.storyboard */,
 				3507760B2C0F0796002E6971 /* Assets.xcassets */,
 				3507760D2C0F0796002E6971 /* LaunchScreen.storyboard */,
 				350776102C0F0796002E6971 /* Info.plist */,
 			);
 			path = MovieAppProject;
+			sourceTree = "<group>";
+		};
+		350776162C0F07F2002E6971 /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				350776182C0F081E002E6971 /* MainPageViewController.swift */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		350776172C0F0802002E6971 /* LoginPage */ = {
+			isa = PBXGroup;
+			children = (
+				3507761A2C0F0828002E6971 /* LoginPageViewController.swift */,
+			);
+			path = LoginPage;
+			sourceTree = "<group>";
+		};
+		3507761F2C0F10A0002E6971 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +114,10 @@
 			dependencies = (
 			);
 			name = MovieAppProject;
+			packageProductDependencies = (
+				3507761D2C0F096B002E6971 /* Alamofire */,
+				350776212C0F1383002E6971 /* SnapKit */,
+			);
 			productName = MovieAppProject;
 			productReference = 350775FF2C0F0794002E6971 /* MovieAppProject.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +146,10 @@
 				Base,
 			);
 			mainGroup = 350775F62C0F0794002E6971;
+			packageReferences = (
+				3507761C2C0F096B002E6971 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				350776202C0F1383002E6971 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 350776002C0F0794002E6971 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +166,6 @@
 			files = (
 				3507760C2C0F0796002E6971 /* Assets.xcassets in Resources */,
 				3507760F2C0F0796002E6971 /* Base in Resources */,
-				3507760A2C0F0794002E6971 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				350776192C0F081E002E6971 /* MainPageViewController.swift in Sources */,
 				350776072C0F0794002E6971 /* ViewController.swift in Sources */,
 				350776032C0F0794002E6971 /* AppDelegate.swift in Sources */,
+				3507761B2C0F0828002E6971 /* LoginPageViewController.swift in Sources */,
 				350776052C0F0794002E6971 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +187,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		350776082C0F0794002E6971 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				350776092C0F0794002E6971 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3507760D2C0F0796002E6971 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,9 +329,9 @@
 				INFOPLIST_FILE = MovieAppProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +339,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = joy.MovieAppProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -325,9 +361,9 @@
 				INFOPLIST_FILE = MovieAppProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +371,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = joy.MovieAppProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -363,6 +403,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3507761C2C0F096B002E6971 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+		350776202C0F1383002E6971 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3507761D2C0F096B002E6971 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3507761C2C0F096B002E6971 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		350776212C0F1383002E6971 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 350776202C0F1383002E6971 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 350775F72C0F0794002E6971 /* Project object */;
 }
