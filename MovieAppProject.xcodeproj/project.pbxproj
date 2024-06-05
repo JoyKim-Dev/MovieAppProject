@@ -22,6 +22,8 @@
 		3556EEDA2C10465900047506 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3556EED92C10465900047506 /* .gitignore */; };
 		3556EEDC2C10466F00047506 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3556EEDB2C10466F00047506 /* APIKey.swift */; };
 		3556EEDF2C1062A400047506 /* LotteryGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3556EEDE2C1062A400047506 /* LotteryGameViewController.swift */; };
+		3556EEE12C10A37A00047506 /* HotContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3556EEE02C10A37A00047506 /* HotContentTableViewCell.swift */; };
+		3556EEE32C10A3F200047506 /* ReuseIDentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3556EEE22C10A3F200047506 /* ReuseIDentifierProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		3556EED92C10465900047506 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		3556EEDB2C10466F00047506 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		3556EEDE2C1062A400047506 /* LotteryGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryGameViewController.swift; sourceTree = "<group>"; };
+		3556EEE02C10A37A00047506 /* HotContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotContentTableViewCell.swift; sourceTree = "<group>"; };
+		3556EEE22C10A3F200047506 /* ReuseIDentifierProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIDentifierProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,17 +80,18 @@
 			isa = PBXGroup;
 			children = (
 				350776232C0F551B002E6971 /* TabBarController.swift */,
-				3556EEDD2C10629600047506 /* Lottery */,
 				350776162C0F07F2002E6971 /* MainPage */,
 				3507761F2C0F10A0002E6971 /* HotContent */,
 				350776252C0F5598002E6971 /* SavedContent */,
-				350776022C0F0794002E6971 /* AppDelegate.swift */,
+				3556EEDD2C10629600047506 /* Lottery */,
 				350776042C0F0794002E6971 /* SceneDelegate.swift */,
+				350776022C0F0794002E6971 /* AppDelegate.swift */,
 				350776062C0F0794002E6971 /* ViewController.swift */,
 				3507760B2C0F0796002E6971 /* Assets.xcassets */,
 				3507760D2C0F0796002E6971 /* LaunchScreen.storyboard */,
 				350776102C0F0796002E6971 /* Info.plist */,
 				3556EEDB2C10466F00047506 /* APIKey.swift */,
+				3556EEE22C10A3F200047506 /* ReuseIDentifierProtocol.swift */,
 			);
 			path = MovieAppProject;
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				350776262C0F5625002E6971 /* HotContentViewController.swift */,
+				3556EEE02C10A37A00047506 /* HotContentTableViewCell.swift */,
 			);
 			path = HotContent;
 			sourceTree = "<group>";
@@ -204,9 +210,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				350776292C0F562E002E6971 /* SavedContentViewController.swift in Sources */,
+				3556EEE32C10A3F200047506 /* ReuseIDentifierProtocol.swift in Sources */,
 				350776192C0F081E002E6971 /* MainPageViewController.swift in Sources */,
 				350776072C0F0794002E6971 /* ViewController.swift in Sources */,
 				350776032C0F0794002E6971 /* AppDelegate.swift in Sources */,
+				3556EEE12C10A37A00047506 /* HotContentTableViewCell.swift in Sources */,
 				3507761B2C0F0828002E6971 /* LoginPageViewController.swift in Sources */,
 				350776242C0F551B002E6971 /* TabBarController.swift in Sources */,
 				350776272C0F5625002E6971 /* HotContentViewController.swift in Sources */,

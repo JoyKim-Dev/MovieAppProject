@@ -41,7 +41,7 @@ class TabBarController: UITabBarController {
         nav4.tabBarItem = UITabBarItem(title: "Lottery", image: UIImage(systemName: "gamecontroller"), selectedImage: UIImage(systemName: "gamecontroller.fill") )
         
         vc1.navigationItem.title = "조이킴님"
-        vc2.navigationItem.title = "이번 주 Top5"
+        vc2.navigationItem.title = "이번 주 인기컨텐츠"
         vc3.navigationItem.title = "내가 찜한 목록"
         vc4.navigationItem.title = "당첨결과조회"
         
