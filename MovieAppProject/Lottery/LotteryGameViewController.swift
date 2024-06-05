@@ -80,6 +80,32 @@ extension LotteryGameViewController {
         numberTextFIeld.inputView = picker
         picker.delegate = self
         
+        let url = "\(APIUrl.lotteryApi)986"
+        numberTextFIeld.text = "986"
+        numberTextFIeld.clearButtonMode = .whileEditing
+        
+        hideKeyboardWhenTappedAround()
+        
+        
+        
+        
+        AF.request(url).responseDecodable(of: Lotto.self ) { response in
+            switch response.result {
+            case .success(let value):
+                
+                self.firstBall.text = "\(value.drwtNo1)"
+                self.secondBall.text = "\(value.drwtNo2)"
+                self.thirdBall.text = "\(value.drwtNo3)"
+                self.fourthBall.text = "\(value.drwtNo4)"
+                self.fifthBall.text = "\(value.drwtNo5)"
+                self.sixthBall.text = "\(value.drwtNo6)"
+                self.bonusBall.text = "\(value.bnusNo)"
+                self.resultIntLabel.text = "\(value.drwNo)회"
+                self.dateLabel.text = "\(value.drwNoDate) 추첨"
+                
+            case .failure(_):
+                self.numberTextFIeld.text = "해당하는 회차가 없습니다."
+            }}
         
         numberTextFIeld.backgroundColor = .lightGray
         numberTextFIeld.layer.cornerRadius = 4
@@ -99,13 +125,13 @@ extension LotteryGameViewController {
         infoLabel.textAlignment = .left
         
         dateLabel.layer.borderColor = .none
-        dateLabel.text = ""
+
         dateLabel.font = .systemFont(ofSize: 13, weight: .semibold)
         dateLabel.textColor = .gray
         
         lineView.backgroundColor = .gray.withAlphaComponent(0.5)
         
-        resultIntLabel.text = ""
+
         resultIntLabel.font = .systemFont(ofSize: 25, weight: .heavy)
         resultIntLabel.textColor = .orange
         
