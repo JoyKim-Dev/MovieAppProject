@@ -16,7 +16,7 @@ class LoginPageViewController: UIViewController {
         view.textColor = .red
         view.font = .systemFont(ofSize: 30, weight: .black)
         view.textAlignment = .center
-        view.backgroundColor = .none
+        view.backgroundColor = .clear
         view.text = "JOYFLIX"
         return view
     }()
@@ -29,7 +29,11 @@ class LoginPageViewController: UIViewController {
         view.clipsToBounds = true
         view.backgroundColor = .darkGray
         view.keyboardType = .emailAddress
-        view.placeholder = "이메일 주소 또는 전화번호"
+        view.attributedPlaceholder = NSAttributedString(
+            string: "이메일 주소 또는 전화번호",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.white]
+        )
+        
         return view
     }()
     
@@ -42,7 +46,9 @@ class LoginPageViewController: UIViewController {
         view.clipsToBounds = true
         view.backgroundColor = .darkGray
         view.keyboardType = .default
-        view.placeholder = "비밀번호"
+        view.attributedPlaceholder = NSAttributedString(
+            string: "비밀번호",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         return view
     }()
     
@@ -55,7 +61,9 @@ class LoginPageViewController: UIViewController {
         view.clipsToBounds = true
         view.backgroundColor = .darkGray
         view.keyboardType = .default
-        view.placeholder = "닉네임"
+        view.attributedPlaceholder = NSAttributedString(
+            string: "닉네임",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         return view
     }()
     
@@ -68,7 +76,9 @@ class LoginPageViewController: UIViewController {
         view.clipsToBounds = true
         view.backgroundColor = .darkGray
         view.keyboardType = .default
-        view.placeholder = "위치"
+        view.attributedPlaceholder = NSAttributedString(
+            string: "위치",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         return view
     }()
     
@@ -81,7 +91,9 @@ class LoginPageViewController: UIViewController {
         view.clipsToBounds = true
         view.backgroundColor = .darkGray
         view.keyboardType = .numberPad
-        view.placeholder = "추천 코드 입력"
+        view.attributedPlaceholder = NSAttributedString(
+            string: "추천코드 입력",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         return view
     }()
     
@@ -196,7 +208,7 @@ extension LoginPageViewController {
     
     
     func configureUI() {
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .black
         let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
            tap.cancelsTouchesInView = false
            view.addGestureRecognizer(tap)
