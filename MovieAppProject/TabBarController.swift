@@ -21,12 +21,14 @@ class TabBarController: UITabBarController {
         let vc1 = MainPageViewController()
         let vc2 = HotContentViewController()
         let vc3 = SavedContentViewController()
+        let vc4 = LotteryGameViewController()
         
         let nav1 = UINavigationController(rootViewController: vc1)
         let nav2 = UINavigationController(rootViewController: vc2)
         let nav3 = UINavigationController(rootViewController: vc3)
+        let nav4 = UINavigationController(rootViewController: vc4)
         
-        setViewControllers([nav1, nav2, nav3], animated: false)
+        setViewControllers([nav1, nav2, nav3, nav4], animated: false)
         
         nav1.tabBarItem = UITabBarItem(title: "홈", image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
         
@@ -36,9 +38,12 @@ class TabBarController: UITabBarController {
         nav3.tabBarItem = UITabBarItem(title: "저장한 콘텐츠", image: UIImage(systemName: "square.and.arrow.down"), selectedImage: UIImage(systemName: "square.and.arrow.down.fill"))
         nav3.tabBarItem.image?.withTintColor(.white)
         
+        nav4.tabBarItem = UITabBarItem(title: "Lottery", image: UIImage(systemName: "gamecontroller"), selectedImage: UIImage(systemName: "gamecontroller.fill") )
+        
         vc1.navigationItem.title = "조이킴님"
         vc2.navigationItem.title = "이번 주 Top5"
         vc3.navigationItem.title = "내가 찜한 목록"
+        vc4.navigationItem.title = "당첨결과조회"
         
     }
     

@@ -16,9 +16,12 @@
 		3507761B2C0F0828002E6971 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3507761A2C0F0828002E6971 /* LoginPageViewController.swift */; };
 		3507761E2C0F096B002E6971 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3507761D2C0F096B002E6971 /* Alamofire */; };
 		350776222C0F1383002E6971 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 350776212C0F1383002E6971 /* SnapKit */; };
-		350776242C0F551B002E6971 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350776232C0F551B002E6971 /* TabBarViewController.swift */; };
+		350776242C0F551B002E6971 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350776232C0F551B002E6971 /* TabBarController.swift */; };
 		350776272C0F5625002E6971 /* HotContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350776262C0F5625002E6971 /* HotContentViewController.swift */; };
 		350776292C0F562E002E6971 /* SavedContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350776282C0F562E002E6971 /* SavedContentViewController.swift */; };
+		3556EEDA2C10465900047506 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3556EED92C10465900047506 /* .gitignore */; };
+		3556EEDC2C10466F00047506 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3556EEDB2C10466F00047506 /* APIKey.swift */; };
+		3556EEDF2C1062A400047506 /* LotteryGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3556EEDE2C1062A400047506 /* LotteryGameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +34,12 @@
 		350776102C0F0796002E6971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		350776182C0F081E002E6971 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		3507761A2C0F0828002E6971 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
-		350776232C0F551B002E6971 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		350776232C0F551B002E6971 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		350776262C0F5625002E6971 /* HotContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotContentViewController.swift; sourceTree = "<group>"; };
 		350776282C0F562E002E6971 /* SavedContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedContentViewController.swift; sourceTree = "<group>"; };
+		3556EED92C10465900047506 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		3556EEDB2C10466F00047506 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		3556EEDE2C1062A400047506 /* LotteryGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,7 @@
 		350775F62C0F0794002E6971 = {
 			isa = PBXGroup;
 			children = (
+				3556EED92C10465900047506 /* .gitignore */,
 				350776012C0F0794002E6971 /* MovieAppProject */,
 				350776002C0F0794002E6971 /* Products */,
 			);
@@ -68,7 +75,8 @@
 		350776012C0F0794002E6971 /* MovieAppProject */ = {
 			isa = PBXGroup;
 			children = (
-				350776232C0F551B002E6971 /* TabBarViewController.swift */,
+				350776232C0F551B002E6971 /* TabBarController.swift */,
+				3556EEDD2C10629600047506 /* Lottery */,
 				350776162C0F07F2002E6971 /* MainPage */,
 				3507761F2C0F10A0002E6971 /* HotContent */,
 				350776252C0F5598002E6971 /* SavedContent */,
@@ -78,6 +86,7 @@
 				3507760B2C0F0796002E6971 /* Assets.xcassets */,
 				3507760D2C0F0796002E6971 /* LaunchScreen.storyboard */,
 				350776102C0F0796002E6971 /* Info.plist */,
+				3556EEDB2C10466F00047506 /* APIKey.swift */,
 			);
 			path = MovieAppProject;
 			sourceTree = "<group>";
@@ -105,6 +114,14 @@
 				350776282C0F562E002E6971 /* SavedContentViewController.swift */,
 			);
 			path = SavedContent;
+			sourceTree = "<group>";
+		};
+		3556EEDD2C10629600047506 /* Lottery */ = {
+			isa = PBXGroup;
+			children = (
+				3556EEDE2C1062A400047506 /* LotteryGameViewController.swift */,
+			);
+			path = Lottery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3507760C2C0F0796002E6971 /* Assets.xcassets in Resources */,
+				3556EEDA2C10465900047506 /* .gitignore in Resources */,
 				3507760F2C0F0796002E6971 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,8 +208,10 @@
 				350776072C0F0794002E6971 /* ViewController.swift in Sources */,
 				350776032C0F0794002E6971 /* AppDelegate.swift in Sources */,
 				3507761B2C0F0828002E6971 /* LoginPageViewController.swift in Sources */,
-				350776242C0F551B002E6971 /* TabBarViewController.swift in Sources */,
+				350776242C0F551B002E6971 /* TabBarController.swift in Sources */,
 				350776272C0F5625002E6971 /* HotContentViewController.swift in Sources */,
+				3556EEDC2C10466F00047506 /* APIKey.swift in Sources */,
+				3556EEDF2C1062A400047506 /* LotteryGameViewController.swift in Sources */,
 				350776052C0F0794002E6971 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
